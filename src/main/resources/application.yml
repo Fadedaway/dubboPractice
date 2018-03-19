@@ -1,0 +1,33 @@
+#日志级别
+logging:
+    level:
+        root: info
+
+#端口号
+server:
+    port: 8090
+
+#spring 应用配置
+spring:
+    application:
+       name: dubboPractice
+
+management:
+    port: 8091
+
+#dubbo configurations
+dubbo:
+  scan:
+    base-packages: com.jovi.services
+  application:
+    id: dubboPractice
+    name: dubboPractice
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 12345
+  registry:
+    id: my-registry
+    address: N/A
+
+
